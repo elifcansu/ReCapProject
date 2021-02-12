@@ -14,6 +14,8 @@ namespace ConsoleUI
 
             //BrandTestFirst();
 
+            CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+            customerManager.Add(new Customer { UserId = 1, CompanyName = "M1 Müşteri" });
 
         }
 
@@ -31,12 +33,20 @@ namespace ConsoleUI
 
             //carManager.Add(new Car { BrandId = 1, ColorId = 2, DailyPrice = 200, ModelYear = "2018", Description = "Otomatik Dizel" });
 
-            
-
-            foreach (var car in carManager.GetCarDetails())
+            var result = carManager.GetCarDetails();
+            if (result.Success == true)
             {
-                Console.WriteLine( car.BrandName + " / " + car.ColorName + " / " + car.DailyPrice);
+                foreach (var car in result.Data)
+                {
+                    Console.WriteLine(car.CarName + " / " + car.BrandName + " / " + car.ColorName + " / " + car.DailyPrice);
+                }
             }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+
+            
         }
     }
 }
