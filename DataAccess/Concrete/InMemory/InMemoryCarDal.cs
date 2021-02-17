@@ -18,13 +18,13 @@ namespace DataAccess.Concrete.InMemory
             _cars = new List<Car>
             {
                 new Car
-                {CarId=1,BrandId=1,ColorId=1,ModelYear="2014",DailyPrice=120,Description="2014 model wolksvagen polo marka  beyaz araba günlük 120 tl'den başlayan fiyatlarla..." },
+                {CarId=1,BrandId=1,ColorId=1,ModelYear="2014",DailyPrice=120,Descriptions="2014 model wolksvagen polo marka  beyaz araba günlük 120 tl'den başlayan fiyatlarla..." },
                 new Car
-                {CarId=2,BrandId=2,ColorId=1,ModelYear="2012",DailyPrice=150,Description="2012 model Citroen marka  beyaz araba günlük 150 tl'den başlayan fiyatlarla..." },
+                {CarId=2,BrandId=2,ColorId=1,ModelYear="2012",DailyPrice=150,Descriptions="2012 model Citroen marka  beyaz araba günlük 150 tl'den başlayan fiyatlarla..." },
                  new Car
-                {CarId=3,BrandId=1,ColorId=2,ModelYear="2018",DailyPrice=220,Description="2018 model Wolksvagen polo marka kırmızı araba günlük 220 tl'den başlayan fiyatlarla..." },
+                {CarId=3,BrandId=1,ColorId=2,ModelYear="2018",DailyPrice=220,Descriptions="2018 model Wolksvagen polo marka kırmızı araba günlük 220 tl'den başlayan fiyatlarla..." },
                   new Car
-                {CarId=4,BrandId=3,ColorId=3,ModelYear="2020",DailyPrice=250,Description="2020 model Nissan Qashqai polo marka  beyaz araba günlük 250 tl'den başlayan fiyatlarla..." }
+                {CarId=4,BrandId=3,ColorId=3,ModelYear="2020",DailyPrice=250,Descriptions="2020 model Nissan Qashqai polo marka  beyaz araba günlük 250 tl'den başlayan fiyatlarla..." }
 
             };
         }
@@ -72,7 +72,7 @@ namespace DataAccess.Concrete.InMemory
             carToUpdate.ColorId = car.ColorId;
             carToUpdate.ModelYear = car.ModelYear;
             carToUpdate.DailyPrice = car.DailyPrice;
-            carToUpdate.Description = car.Description;
+            carToUpdate.Descriptions = car.Descriptions;
         }
 
     }
