@@ -9,8 +9,8 @@ namespace Business.Constants
         public static string BrandAdded = "Marka eklendi";
         public static string CarAdded = "Araç eklendi";
         public static string ColorAdded = "Renk eklendi";
-        public static string BrandNameInvalid = "Marka ismi geçersiz";
-        public static string DailyPriceInvalid = "Günlük ücret geçersiz";
+        public static string BrandNameInvalid = "Marka ismi 2 karakterden fazla olmalı";
+        public static string DailyPriceInvalid = "Günlük ücret 0 dan büyük olmalı";
         public static string CarsListed = "Araç bilgileri listelendi";
         public static string BrandListed = "Marka bilgileri listelendi";
         public static string ColorListed = "Renk bilgileri listelendi";
